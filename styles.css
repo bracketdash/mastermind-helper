@@ -26,6 +26,194 @@ body {
 
 .container {
   margin: 0 auto;
-  padding-top: 64px;
+  padding-top: 12px;
   width: 360px;
+}
+
+.rows > div {
+  display: flex;
+  gap: 10px;
+  padding-left: 3px;
+  padding-top: 20px;
+}
+
+.colors {
+  display: flex;
+  gap: 5px;
+}
+
+.colors > div {
+  border-radius: 3px;
+  border: 4px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  height: 56px;
+  padding: 1px;
+  width: 53px;
+}
+
+.colors > div.a {
+  border-color: #e74c3c;
+}
+
+.colors > div.b {
+  border-color: #3498db;
+}
+
+.colors > div.c {
+  border-color: #2ecc71;
+}
+
+.colors > div.d {
+  border-color: #f1c40f;
+}
+
+.colors > div.e {
+  border-color: #9b59b6;
+}
+
+.colors > div.f {
+  border-color: #e67e22;
+}
+
+.a > div:not(.a):not(:hover),
+.b > div:not(.b):not(:hover),
+.c > div:not(.c):not(:hover),
+.d > div:not(.d):not(:hover),
+.e > div:not(.e):not(:hover),
+.f > div:not(.f):not(:hover) {
+  opacity: 0.5;
+}
+
+.colors > div > div {
+  cursor: pointer;
+  height: 18px;
+  width: 26px;
+}
+
+.colors > div > div.a,
+.suggestion > div.a {
+  background-color: #e74c3c;
+}
+
+.colors > div > div.b,
+.suggestion > div.b {
+  background-color: #3498db;
+}
+
+.colors > div > div.c,
+.suggestion > div.c {
+  background-color: #2ecc71;
+}
+
+.colors > div > div.d,
+.suggestion > div.d {
+  background-color: #f1c40f;
+}
+
+.colors > div > div.e,
+.suggestion > div.e {
+  background-color: #9b59b6;
+}
+
+.colors > div > div.f,
+.suggestion > div.f {
+  background-color: #e67e22;
+}
+
+.pins {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 3px;
+}
+
+.pins > input {
+  -moz-appearance: textfield;
+  border-radius: 50%;
+  border: 1px solid #0005;
+  font-weight: bold;
+  height: 24px;
+  text-align: center;
+  width: 23px;
+}
+
+.pins > input:first-child {
+  background-color: #c00;
+  color: #fff;
+}
+
+.pins > input:last-child {
+  background-color: #fff;
+  color: #333;
+}
+
+.pins > input::-webkit-outer-spin-button,
+.pins > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 7px;
+}
+
+.controls > button {
+  border-radius: 3px;
+  border: 1px solid #0005;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls > button:first-child {
+  background-color: #b00;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.controls > button:disabled {
+  background-color: #ddd;
+  border-color: #0002;
+  cursor: default;
+}
+
+.controls > button:first-child:not(:disabled):hover {
+  background-color: #c11;
+}
+
+.controls > button:first-child:not(:disabled):active {
+  background-color: #a00;
+}
+
+.controls > button:last-child {
+  background-color: #090;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.controls > button:last-child:hover {
+  background-color: #1a1;
+}
+
+.controls > button:last-child:active {
+  background-color: #080;
+}
+
+.suggestion {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.suggestion > div {
+  border-radius: 4px;
+  height: 50px;
+  width: 50px;
 }
