@@ -77,6 +77,25 @@ body {
   border-color: #e67e22;
 }
 
+.colors > div > div {
+  cursor: pointer;
+  height: 18px;
+  position: relative;
+  width: 26px;
+}
+
+.a > .a,
+.c > .c,
+.e > .e {
+  left: -1px;
+}
+
+.b > .b,
+.d > .d,
+.f > .f {
+  right: -1px;
+}
+
 .a > div:not(.a):not(:hover),
 .b > div:not(.b):not(:hover),
 .c > div:not(.c):not(:hover),
@@ -84,12 +103,6 @@ body {
 .e > div:not(.e):not(:hover),
 .f > div:not(.f):not(:hover) {
   opacity: 0.5;
-}
-
-.colors > div > div {
-  cursor: pointer;
-  height: 18px;
-  width: 26px;
 }
 
 .colors > div > div.a,
