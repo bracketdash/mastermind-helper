@@ -139,7 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 .pins > input {
